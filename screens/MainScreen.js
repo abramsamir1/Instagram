@@ -2,11 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View, Platform } from 'react-native';
 import { TabNavigator, TabBarBottom } from 'react-navigation';
 import { Icon } from 'native-base';
+import ProfileTab from '../AppTabNavigator/ProfileTab';
 import HomeTab from '../AppTabNavigator/HomeTab';
 import SearchTab from '../AppTabNavigator/SearchTab';
 import AddMediaTab from '../AppTabNavigator/AddMediaTab';
 import LikesTab from '../AppTabNavigator/LikesTab';
-import ProfileTab from '../AppTabNavigator/ProfileTab';
+
 
 
 
@@ -25,11 +26,13 @@ import ProfileTab from '../AppTabNavigator/ProfileTab';
 }
 
 const AppTabNavigator = TabNavigator({
+
   HomeTab: { screen: HomeTab },
   SearchTab: { screen: SearchTab },
   AddMediaTab: { screen: AddMediaTab },
   LikesTab: { screen: LikesTab },
   ProfileTab: { screen: ProfileTab }
+
 
 }, {
       tabBarComponent: TabBarBottom,
